@@ -1,0 +1,66 @@
+:root {
+    --bg: #ffffff;
+    --text: #1e293b;
+    --card-bg: #f8fafc;
+    --btn-bg: #3b82f6;
+    --btn-text: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+body.dark {
+    --bg: #0f172a;
+    --text: #f1f5f9;
+    --card-bg: #1e293b;
+    --btn-bg: #60a5fa;
+    --btn-text: #0f172a;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 24px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: background-color 0.2s, transform 0.15s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
